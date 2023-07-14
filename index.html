@@ -8,11 +8,30 @@
         <meta name="viewport" content="width=device-width">
         <title>Ben's Style Guide</title>
         <link href="main.css" rel="stylesheet" type="text/css">
+       
+        <script src="https://kit.fontawesome.com/4179169019.js" crossorigin="anonymous"></script>
+        <script>
+            function changeTheme() {
+                const body = document.body;
+                const icon = document.getElementById('themeSwitcher');
+
+                if (body.classList.contains('darkTheme')) {
+                    body.classList.remove('darkTheme');
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    body.classList.add('darkTheme');
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            }    
+        </script>
     </head>
 
     <body>
         <header class="blue">
             <p>Style Guide</p>
+            <i id="themeSwitcher" class="fa-regular fa-sun fa-xl" onclick="changeTheme();"></i>
         </header>
         
         <main>
@@ -79,6 +98,9 @@
             </div>
         </main>
 
-        <footer class="orange"></footer>
+        <footer class="orange">
+            <p>Ben Wilkins</p>
+            <p>SWDV 640</p>
+        </footer>
     </body>
 </html>
