@@ -1,0 +1,55 @@
+/* SWDV 640: User Interface Design */
+/* Style Guide CSS File */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pangolin', cursive;
+}
+
+button {
+    border-radius: 40px;
+    padding: 15px;
+}
+
+button:active {
+    border: 1px solid black;
+}
+
+.darkTheme {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+.red {
+    background-color: rgb(255, 179, 186);
+}
+
+.orange {
+    background-color: rgb(255, 223, 186);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 186);
+}
+
+.green {
+    background-color: rgb(186, 255, 201);
+}
+
+.blue {
+    background-color: rgb(196, 225, 255);
+}
+
+.colorSquare {
+    height: 100px;
+    width: 100px;
+}
+
+#colorsBox {
+    display: flex;
+}
