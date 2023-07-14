@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
 
+/* General */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -12,12 +13,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+    border: 1px solid black;
     border-radius: 40px;
     padding: 15px;
 }
 
 button:active {
-    border: 1px solid black;
+    border-color: white;
 }
 
 .darkTheme {
@@ -25,6 +27,7 @@ button:active {
     color: white;
 }
 
+/* Colors */
 .red {
     background-color: rgb(255, 179, 186);
 }
@@ -52,4 +55,34 @@ button:active {
 
 #colorsBox {
     display: flex;
+}
+
+/* Form elements */
+label {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    height: 17.5px;
+    width: 17.5px;
+}
+
+.formEle {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+/* Messages */
+.message {
+    font-weight: 600;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
 }
