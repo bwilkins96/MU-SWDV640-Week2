@@ -17,6 +17,10 @@ main {
     margin: auto;
 }
 
+main > div {
+    margin-bottom: 40px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Pangolin', cursive;
 }
@@ -108,4 +112,8 @@ header, footer {
 
 #themeSwitcher {
     width: 25px;
+}
+
+#themeSwitcher:hover {
+    color: white;
 }
